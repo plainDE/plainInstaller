@@ -38,8 +38,8 @@ if [[ `whoami` == 'root' ]]; then
 
 	# Creating config
 	cd ..
-	mkdir -p ~/.config/plainDE
-	cp config.json ~/.config/plainDE/
+	mkdir -p $PWD/.config/plainDE
+	cp config.json $PWD/.config/plainDE/
 
 
 	# Removing temprorary files
