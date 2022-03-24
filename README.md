@@ -3,7 +3,7 @@
 Compiles plainDE and installs into system.
 
 
-1. Install dependencies: qt6-base noto-fonts-emoji polkit ttf-opensans adwaita-icon-theme make
+1. Install dependencies: qt6-base noto-fonts-emoji polkit ttf-opensans adwaita-icon-theme make alsa-utils
 
 2. ```git clone https://github.com/plainDE/plainInstaller```
 
