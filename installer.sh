@@ -1,4 +1,8 @@
-if [[ `whoami` == 'root' ]]; then
+HOMEPATH=$HOME
+
+sudo su
+
+#if [[ `whoami` == 'root' ]]; then
 	# Preventing from mess in current directory ;)
 	mkdir plainDE-tmp-src
 	cd plainDE-tmp-src
@@ -38,14 +42,15 @@ if [[ `whoami` == 'root' ]]; then
 
 	# Creating config
 	cd ..
-	mkdir -p $PWD/.config/plainDE
-	cp config.json $PWD/.config/plainDE/
+	echo $HOMEPATH/.config/plainDE
+	mkdir -p $HOMEPATH/.config/plainDE
+	cp config.json $HOMEPATH/.config/plainDE/
 
 
 	# Removing temprorary files
 	rm -rf plainDE-tmp-src
 
-else
-	echo 'Run it as root.'
+#else
+#     	echo 'Run it as root.'
 fi
 
