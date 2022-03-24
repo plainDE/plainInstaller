@@ -1,0 +1,17 @@
+{
+	"panelHeight": 28,
+	"panelLocation": "top",
+	"theme": "light",
+	"applets": ["appmenu", "windowlist", "volume", "kblayout", "datetime", "usermenu"],
+	"appMenuTriangularTabs": false,
+	"background": "",
+	"iconTheme": "Adwaita",
+	"fontFamily": "Open Sans Regular",
+	"fontSize": 10,
+	"menuText": "Apps",
+	"timeFormat": "h:mm AP",
+	"showDate": true,
+	"dateFormat": "MMM d",
+	"favApps": [],
+	"firstDayOfWeek": "Monday"
+}
