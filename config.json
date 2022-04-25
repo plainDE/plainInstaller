@@ -2,7 +2,8 @@
 	"panelHeight": 28,
 	"panelLocation": "top",
 	"theme": "light",
-	"applets": ["appmenu", "spacer", "volume", "kblayout", "datetime", "splitter", "usermenu"],
+	"applets": ["appmenu", "windowlist", "spacer", "volume", "kblayout", "datetime", "splitter", "usermenu"],
+	"autostart": [""]
 	"appMenuTriangularTabs": false,
 	"background": "",
 	"iconTheme": "Adwaita",
