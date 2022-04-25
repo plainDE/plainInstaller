@@ -3,7 +3,7 @@
 	"panelLocation": "top",
 	"theme": "light",
 	"applets": ["appmenu", "windowlist", "spacer", "volume", "kblayout", "datetime", "splitter", "usermenu"],
-	"autostart": [""]
+	"autostart": [""],
 	"appMenuTriangularTabs": false,
 	"background": "",
 	"iconTheme": "Adwaita",
