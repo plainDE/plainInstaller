@@ -11,6 +11,7 @@ git clone https://github.com/plainDE/plainAbout
 
 # Creating plainDE directory
 sudo mkdir /usr/share/plainDE
+sudo cp menuIcon.png /usr/share/plainDE
 
 # Compiling plainPanel
 cd plainPanel
