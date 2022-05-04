@@ -18,9 +18,6 @@
     "dateFormat": "MMM d",
     "enableAnimation": true,
     "favApps": [
-        "chromium.desktop",
-        "leafpad.desktop",
-        "terminator.desktop"
     ],
     "firstDayOfWeek": "Monday",
     "fontFamily": "Open Sans",
