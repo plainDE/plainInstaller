@@ -1,19 +1,36 @@
 {
-	"panelHeight": 28,
-	"panelLocation": "top",
-	"theme": "light",
-	"applets": ["appmenu", "windowlist", "spacer", "workspaces", "volume", "kblayout", "datetime", "splitter", "usermenu"],
-	"autostart": [""],
-	"appMenuTriangularTabs": false,
-	"background": "",
-	"iconTheme": "Adwaita",
-	"fontFamily": "Open Sans Regular",
-	"fontSize": 10,
-	"menuIconPath": "/usr/share/plainDE/menuIcon.png",
-	"menuText": "Apps",
-	"timeFormat": "h:mm AP",
-	"showDate": true,
-	"dateFormat": "MMM d",
-	"favApps": [],
-	"firstDayOfWeek": "Monday"
+    "accent": "#376594",
+    "appMenuTriangularTabs": true,
+    "applets": [
+        "appmenu",
+        "windowlist",
+        "spacer",
+        "workspaces",
+        "volume",
+        "kblayout",
+        "datetime",
+        "splitter",
+        "usermenu"
+    ],
+    "autostart": [
+    ],
+    "background": "",
+    "dateFormat": "MMM d",
+    "enableAnimation": true,
+    "favApps": [
+        "chromium.desktop",
+        "leafpad.desktop",
+        "terminator.desktop"
+    ],
+    "firstDayOfWeek": "Monday",
+    "fontFamily": "Open Sans",
+    "fontSize": 10,
+    "iconTheme": "",
+    "menuIcon": "/usr/share/plainDE/menuIcon.png",
+    "menuText": "Apps",
+    "panelHeight": 28,
+    "panelLocation": "top",
+    "showDate": true,
+    "theme": "light",
+    "timeFormat": "h:mm AP"
 }

@@ -7,7 +7,7 @@ cd plainDE-tmp-src
 # Cloning all repos
 git clone https://github.com/plainDE/plainPanel
 git clone https://github.com/plainDE/plainAbout
-#git clone https://github.com/plainDE/plainSettings
+git clone https://github.com/plainDE/plainControlCenter
 
 # Creating plainDE directory
 sudo mkdir /usr/share/plainDE
@@ -29,8 +29,13 @@ sudo cp plainAbout /usr/share/plainDE/
 sudo ln -s /usr/share/plainDE/plainAbout /usr/bin/plainAbout
 cd ..
 
-# Compiling plainSettings
-# ...
+# Compiling plainControlCenter
+cd plainControlCenter
+qmake
+make
+sudo cp plainControlCenter /usr/share/plainDE/
+sudo ln -s /usr/share/plainDE/plainControlCenter /usr/bin/plainControlCenter
+cd ..
 
 # Creating config
 cd ..
