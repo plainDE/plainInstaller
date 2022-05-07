@@ -1,5 +1,3 @@
-HOMEPATH=$HOME
-
 # Preventing from mess in current directory ;)
 mkdir plainDE-tmp-src
 cd plainDE-tmp-src
@@ -8,6 +6,7 @@ cd plainDE-tmp-src
 git clone https://github.com/plainDE/plainPanel
 git clone https://github.com/plainDE/plainAbout
 git clone https://github.com/plainDE/plainControlCenter
+git clone https://github.com/plainDE/genconfig
 
 # Creating plainDE directory
 sudo mkdir /usr/share/plainDE
@@ -37,11 +36,10 @@ sudo cp plainControlCenter /usr/share/plainDE/
 sudo ln -s /usr/share/plainDE/plainControlCenter /usr/bin/plainControlCenter
 cd ..
 
-# Creating config
+# Copying genconfig script
+cd genconfig
+sudo cp genconfig.py /usr/share/plainDE
 cd ..
-echo $HOMEPATH/.config/plainDE
-mkdir -p $HOMEPATH/.config/plainDE
-cp config.json $HOMEPATH/.config/plainDE/
 
 # Removing temprorary files
 rm -rf plainDE-tmp-src
