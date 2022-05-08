@@ -6,7 +6,6 @@ cd plainDE-tmp-src
 git clone https://github.com/plainDE/plainPanel
 git clone https://github.com/plainDE/plainAbout
 git clone https://github.com/plainDE/plainControlCenter
-git clone https://github.com/plainDE/genconfig
 
 # Creating plainDE directory
 sudo mkdir /usr/share/plainDE
@@ -34,11 +33,6 @@ qmake
 make
 sudo cp plainControlCenter /usr/share/plainDE/
 sudo ln -s /usr/share/plainDE/plainControlCenter /usr/bin/plainControlCenter
-cd ..
-
-# Copying genconfig script
-cd genconfig
-sudo cp genconfig.py /usr/share/plainDE
 cd ..
 
 # Removing temprorary files
