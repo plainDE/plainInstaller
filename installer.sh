@@ -17,6 +17,7 @@ qmake
 make
 sudo cp plainPanel /usr/share/plainDE/
 sudo ln -s /usr/share/plainDE/plainPanel /usr/bin/plainPanel
+sudo cp genconfig.py /usr/share/plainDE/
 cd ..
 	
 # Compiling plainAbout
