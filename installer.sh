@@ -19,8 +19,7 @@ sudo cp ../menuIcon.png /usr/share/plainDE
 cd plainPanel
 qmake
 make
-sudo cp plainPanel /usr/share/plainDE/
-sudo ln -s /usr/share/plainDE/plainPanel /usr/bin/plainPanel
+sudo cp plainPanel /usr/bin/
 sudo mkdir /usr/share/plainDE/{tools,styles}
 sudo cp tools/genconfig.py /usr/share/plainDE/tools/
 sudo cp styles/* /usr/share/plainDE/styles/
@@ -30,16 +29,14 @@ cd ..
 cd plainAbout
 qmake
 make
-sudo cp plainAbout /usr/share/plainDE/
-sudo ln -s /usr/share/plainDE/plainAbout /usr/bin/plainAbout
+sudo cp plainAbout /usr/bin/
 cd ..
 
 # Compiling plainControlCenter
 cd plainControlCenter
 qmake
 make
-sudo cp plainControlCenter /usr/share/plainDE/
-sudo ln -s /usr/share/plainDE/plainControlCenter /usr/bin/plainControlCenter
+sudo cp plainControlCenter /usr/bin
 cd ..
 
 cd ..
