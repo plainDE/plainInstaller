@@ -1,3 +1,7 @@
+# Removing old version (if exists)
+sudo rm -rf /usr/share/plainDE
+sudo rm -rf /usr/bin/plain{Panel,About,ControlCenter}
+
 # Preventing from mess in current directory ;)
 mkdir plainDE-tmp-src
 cd plainDE-tmp-src
@@ -10,10 +14,6 @@ git clone https://github.com/plainDE/plainControlCenter
 # Creating plainDE directory
 sudo mkdir /usr/share/plainDE
 sudo cp ../menuIcon.png /usr/share/plainDE
-
-# Removing old version (if exists)
-sudo rm -rf /usr/share/plainDE
-sudo rm -rf /usr/bin/plain{Panel,About,ControlCenter}
 
 # Compiling plainPanel
 cd plainPanel
