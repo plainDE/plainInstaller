@@ -36,5 +36,7 @@ sudo cp plainControlCenter /usr/share/plainDE/
 sudo ln -s /usr/share/plainDE/plainControlCenter /usr/bin/plainControlCenter
 cd ..
 
+cd ..
+
 # Removing temprorary files
 rm -rf plainDE-tmp-src
