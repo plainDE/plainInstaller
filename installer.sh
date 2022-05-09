@@ -1,4 +1,4 @@
-# Removing old version (if exists)
+# Removing old files
 sudo rm -rf /usr/share/plainDE
 sudo rm -rf /usr/bin/plain{Panel,About,ControlCenter}
 
