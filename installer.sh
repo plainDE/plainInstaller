@@ -11,13 +11,19 @@ git clone https://github.com/plainDE/plainControlCenter
 sudo mkdir /usr/share/plainDE
 sudo cp ../menuIcon.png /usr/share/plainDE
 
+# Removing old version (if exists)
+sudo rm -rf /usr/share/plainDE
+sudo rm -rf /usr/bin/plain{Panel,About,ControlCenter}
+
 # Compiling plainPanel
 cd plainPanel
 qmake
 make
 sudo cp plainPanel /usr/share/plainDE/
 sudo ln -s /usr/share/plainDE/plainPanel /usr/bin/plainPanel
-sudo cp tools/genconfig.py /usr/share/plainDE/
+sudo mkdir /usr/share/plainDE/{tools,styles}
+sudo cp tools/genconfig.py /usr/share/plainDE/tools/
+sudo cp styles/* /usr/share/plainDE/styles/
 cd ..
 	
 # Compiling plainAbout
