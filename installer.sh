@@ -13,7 +13,7 @@ git clone https://github.com/plainDE/plainControlCenter
 
 # Creating plainDE directory
 sudo mkdir /usr/share/plainDE
-sudo cp ../menuIcon.png /usr/share/plainDE
+sudo cp plainPanel/readme-icon.png /usr/share/plainDE/menuIcon.png
 
 # Compiling plainPanel
 cd plainPanel
