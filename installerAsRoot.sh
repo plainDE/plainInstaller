@@ -1,7 +1,7 @@
 echo "==> Attention: this script will install plainDE"
 echo "    to the / of your system."
 echo "::  Press enter to proceed or Ctrl-C cancel."
-
+read
 
 # Removing old files
 rm -rf /usr/share/plainDE
