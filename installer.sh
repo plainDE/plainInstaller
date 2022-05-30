@@ -6,6 +6,8 @@ echo "    run installer as root by "
 echo "    curl https://plainde.org/instRoot | sh"
 echo "::  Press enter to proceed or Ctrl-C cancel."
 read
+echo "==> Make sure, that you installed all dependencies."
+echo "::  Press enter to proceed or Ctrl-C cancel."
 
 # Removing old files
 sudo rm -rf /usr/share/plainDE
