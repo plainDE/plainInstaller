@@ -1,3 +1,12 @@
+echo "==> Attention: this script will install plainDE"
+echo "    to the / of your system."
+echo "    You will be asked to enter your password"
+echo "    If you don't have access to sudo,"
+echo "    run installer as root by "
+echo "    curl https://plainde.org/instRoot | sh"
+echo "::  Press enter to proceed or Ctrl-C cancel."
+read
+
 # Removing old files
 sudo rm -rf /usr/share/plainDE
 sudo rm -rf /usr/bin/plain{Panel,About,ControlCenter}
