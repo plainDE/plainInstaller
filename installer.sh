@@ -1,3 +1,4 @@
+echo "plainInstaller 0.1.3"
 echo "==> Attention: this script will install plainDE"
 echo "    to the / of your system."
 echo "    You will be asked to enter your password"
