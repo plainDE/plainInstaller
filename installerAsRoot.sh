@@ -1,10 +1,10 @@
 echo "==> Attention: this script will install plainDE"
 echo "    to the / of your system."
 echo "::  Press enter to proceed or Ctrl-C cancel."
-read
+python3 -c "input()"
 echo "==> Make sure, that you installed all dependencies."
 echo "::  Press enter to proceed or Ctrl-C cancel."
-
+python3 -c "input()"
 # Removing old files
 rm -rf /usr/share/plainDE
 rm -rf /usr/bin/plain{Panel,About,ControlCenter}
