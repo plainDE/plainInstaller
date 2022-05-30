@@ -1,10 +1,17 @@
+echo "plainInstaller 0.1.3 as Root"
 echo "==> Attention: this script will install plainDE"
 echo "    to the / of your system."
 echo "::  Press enter to proceed or Ctrl-C cancel."
-python3 -c "input()"
+read
 echo "==> Make sure, that you installed all dependencies."
 echo "::  Press enter to proceed or Ctrl-C cancel."
-python3 -c "input()"
+read
+
+if [ ! "$(whoami)" = "root" ]; then
+	echo "==> You are not root."
+	exit 1
+fi
+
 # Removing old files
 rm -rf /usr/share/plainDE
 rm -rf /usr/bin/plain{Panel,About,ControlCenter}
