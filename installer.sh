@@ -5,10 +5,10 @@ echo "    If you don't have access to sudo,"
 echo "    run installer as root by "
 echo "    curl https://plainde.org/instRoot | sh"
 echo "::  Press enter to proceed or Ctrl-C cancel."
-read
+python3 -c "input()"
 echo "==> Make sure, that you installed all dependencies."
 echo "::  Press enter to proceed or Ctrl-C cancel."
-
+python3 -c "input()"
 # Removing old files
 sudo rm -rf /usr/share/plainDE
 sudo rm -rf /usr/bin/plain{Panel,About,ControlCenter}
