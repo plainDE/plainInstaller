@@ -31,9 +31,10 @@ cp plainPanel/readme-icon.png /usr/share/plainDE/menuIcon.png
 
 # Compiling plainPanel
 cd plainPanel
+git checkout $RELEASEVER
 qmake
 make
-cp plainPanel /usr/bin/
+install -m 0755 plainPanel /usr/bin/plainPanel
 mkdir /usr/share/plainDE/{tools,styles}
 cp tools/genconfig.py /usr/share/plainDE/tools/
 cp styles/* /usr/share/plainDE/styles/
@@ -41,16 +42,18 @@ cd ..
 	
 # Compiling plainAbout
 cd plainAbout
+git checkout $RELEASEVER
 qmake
 make
-cp plainAbout /usr/bin/
+install -m 0755 plainAbout /usr/bin/plainAbout
 cd ..
 
 # Compiling plainControlCenter
 cd plainControlCenter
+git checkout $RELEASEVER
 qmake
 make
-cp plainControlCenter /usr/bin
+install -m 0755 plainControlCenter /usr/bin/plainControlCenter
 cd ..
 
 cd ..
