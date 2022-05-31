@@ -1,4 +1,5 @@
-echo "plainInstaller 0.1.3 as Root"
+RELEASEVER="0.1.3"
+echo "plainInstaller $RELEASEVER as Root"
 echo "==> Attention: this script will install plainDE"
 echo "    to the / of your system."
 echo "::  Press enter to proceed or Ctrl-C cancel."
