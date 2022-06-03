@@ -1,15 +1,12 @@
 RELEASEVER="0.1.3"
 echo "plainInstaller $RELEASEVER"
-echo "==> Attention: this script will install plainDE"
-echo "    to the / of your system."
-echo "    You will be asked to enter your password"
-echo "    If you don't have access to sudo,"
-echo "    run installer as root by "
-echo "    curl https://plainde.org/instRoot | sh"
-echo "::  Press enter to proceed or Ctrl-C cancel."
+echo "==> Installing plainDE into your system."
+echo "    Please ensure you are allowed to use sudo"
+echo "    or run root installer."
+echo "::  Press enter to proceed or Ctrl-C to cancel."
 read
-echo "==> Make sure, that you installed all dependencies."
-echo "::  Press enter to proceed or Ctrl-C cancel."
+echo "==> Make sure all dependencies are installed."
+echo "::  Press enter to proceed or Ctrl-C to cancel."
 read
 # Removing old files
 sudo rm -rf /usr/share/plainDE
