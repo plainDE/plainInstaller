@@ -3,7 +3,7 @@
 Compiles plainDE and installs into system.
 
 
-1. Install dependencies: qt6-base noto-fonts-emoji polkit ttf-opensans make alsa-utils kwindowsystem python3
+1. Install dependencies: qt6-base noto-fonts-emoji polkit ttf-opensans make alsa-utils kwindowsystem python3 xcompmgr
 
 2. ```git clone https://github.com/plainDE/plainInstaller```
 
@@ -11,7 +11,6 @@ Compiles plainDE and installs into system.
 
 4.    ```./install.sh```
 
-5.    Now you can add plainPanel to your OpenBox/FluxBox/... autostart and enjoy!
+5.    Now you can add plainPanel (+ xcompmgr, if opacity is needed) to your OpenBox/FluxBox/... autostart and enjoy!
 
 `plainPanel`
-
