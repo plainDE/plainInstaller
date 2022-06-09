@@ -4,10 +4,10 @@ echo "==> Installing plainDE into your system."
 echo "    Please ensure you are allowed to use sudo"
 echo "    or run root installer."
 echo "::  Press enter to proceed or Ctrl-C to cancel."
-read
+read PROCEED
 echo "==> Make sure all dependencies are installed."
 echo "::  Press enter to proceed or Ctrl-C to cancel."
-read
+read PROCEEDD
 # Removing old files
 sudo rm -rf /usr/share/plainDE
 sudo rm -rf /usr/bin/plain{Panel,About,ControlCenter}
