@@ -3,7 +3,8 @@
 Compiles plainDE and installs into system.
 
 
-1. Install dependencies: qt6-base noto-fonts-emoji polkit ttf-opensans make alsa-utils kwindowsystem python3 xcompmgr
+1. Install dependencies:
+`qt6-base noto-fonts-emoji polkit ttf-opensans make alsa-utils kwindowsystem python3 xcompmgr`
 
 2. ```git clone https://github.com/plainDE/plainInstaller```
 
