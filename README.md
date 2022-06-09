@@ -3,7 +3,7 @@
 Compiles plainDE and installs into system.
 
 
-1. Install dependencies: see [table of dependencies](/deps.md).
+1. Install dependencies: see [table of dependencies](/dependencies.md).
 
 
 2. ```git clone https://github.com/plainDE/plainInstaller```
