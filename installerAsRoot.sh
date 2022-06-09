@@ -2,10 +2,10 @@ RELEASEVER="0.1.4"
 echo "plainInstaller $RELEASEVER as Root"
 echo "==> Installing plainDE into your system."
 echo "::  Press enter to proceed or Ctrl-C to cancel."
-read
+read PROCEED
 echo "==> Make sure all dependencies are installed."
 echo "::  Press enter to proceed or Ctrl-C to cancel."
-read
+read PROCEEDD
 
 if [ ! "$(whoami)" = "root" ]; then
 	echo "Run it as root."
