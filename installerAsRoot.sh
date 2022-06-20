@@ -29,7 +29,7 @@ git clone https://github.com/plainDE/plainArtwork
 
 # Creating plainDE directory
 mkdir /usr/share/plainDE
-cp -R plainBase/usr/ /usr/
+cp -R plainBase/usr/* /usr/
 
 # Compiling plainPanel
 cd plainPanel
