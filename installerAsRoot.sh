@@ -1,11 +1,11 @@
-RELEASEVER="0.1.4"
+RELEASEVER="0.2"
 echo "plainInstaller $RELEASEVER as Root"
 echo "==> Installing plainDE into your system."
 echo "::  Press enter to proceed or Ctrl-C to cancel."
-read PROCEED
+read
 echo "==> Make sure all dependencies are installed."
 echo "::  Press enter to proceed or Ctrl-C to cancel."
-read PROCEEDD
+read
 
 if [ ! "$(whoami)" = "root" ]; then
 	echo "Run it as root."
@@ -21,13 +21,15 @@ mkdir plainDE-tmp-src
 cd plainDE-tmp-src
 
 # Cloning all repos
+git clone https://github.com/plainDE/plainBase
 git clone https://github.com/plainDE/plainPanel
 git clone https://github.com/plainDE/plainAbout
 git clone https://github.com/plainDE/plainControlCenter
+git clone https://github.com/plainDE/plainArtwork
 
 # Creating plainDE directory
 mkdir /usr/share/plainDE
-cp plainPanel/readme-icon.png /usr/share/plainDE/menuIcon.png
+cp -R plainBase/usr/ /usr/
 
 # Compiling plainPanel
 cd plainPanel
@@ -35,10 +37,6 @@ git checkout $RELEASEVER
 qmake
 make
 install -m 0755 plainPanel /usr/bin/plainPanel
-mkdir /usr/share/plainDE/{tools,styles}
-cp tools/genconfig.py /usr/share/plainDE/tools/
-cp styles/* /usr/share/plainDE/styles/
-cd ..
 	
 # Compiling plainAbout
 cd plainAbout

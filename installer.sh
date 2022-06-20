@@ -1,13 +1,13 @@
-RELEASEVER="0.1.4"
+RELEASEVER="0.2"
 echo "plainInstaller $RELEASEVER"
 echo "==> Installing plainDE into your system."
 echo "    Please ensure you are allowed to use sudo"
 echo "    or run root installer."
 echo "::  Press enter to proceed or Ctrl-C to cancel."
-read PROCEED
+read
 echo "==> Make sure all dependencies are installed."
 echo "::  Press enter to proceed or Ctrl-C to cancel."
-read PROCEEDD
+read
 # Removing old files
 sudo rm -rf /usr/share/plainDE
 sudo rm -rf /usr/bin/plain{Panel,About,ControlCenter}
@@ -17,13 +17,18 @@ mkdir plainDE-tmp-src
 cd plainDE-tmp-src
 
 # Cloning all repos
+git clone https://github.com/plainDE/plainBase
 git clone https://github.com/plainDE/plainPanel
 git clone https://github.com/plainDE/plainAbout
 git clone https://github.com/plainDE/plainControlCenter
+git clone https://github.com/plainDE/plainArtwork
 
-# Creating plainDE directory
+# Creating plainDE directory and copying base files
 sudo mkdir /usr/share/plainDE
-sudo cp plainPanel/readme-icon.png /usr/share/plainDE/menuIcon.png
+sudo cp -R plainBase/usr/ /usr/
+
+# Copying artwork
+sudo cp -R plainArtwork/flags /usr/share/
 
 # Compiling plainPanel
 cd plainPanel
@@ -31,9 +36,6 @@ git checkout $RELEASEVER
 qmake
 make
 sudo install -m 0755 plainPanel /usr/bin/plainPanel
-sudo mkdir /usr/share/plainDE/{tools,styles}
-sudo cp tools/genconfig.py /usr/share/plainDE/tools/
-sudo cp styles/* /usr/share/plainDE/styles/
 cd ..
 	
 # Compiling plainAbout
