@@ -25,7 +25,7 @@ git clone https://github.com/plainDE/plainArtwork
 
 # Creating plainDE directory and copying base files
 sudo mkdir /usr/share/plainDE
-sudo cp -R plainBase/usr/ /usr/
+sudo cp -R plainBase/usr/* /usr/
 
 # Copying artwork
 sudo cp -R plainArtwork/flags /usr/share/
