@@ -1,4 +1,4 @@
-RELEASEVER="0.2"
+RELEASEVER="0.2.1"
 echo "plainInstaller $RELEASEVER as Root"
 echo "==> Installing plainDE into your system."
 echo "::  Press enter to proceed or Ctrl-C to cancel."
@@ -27,9 +27,12 @@ git clone https://github.com/plainDE/plainAbout
 git clone https://github.com/plainDE/plainControlCenter
 git clone https://github.com/plainDE/plainArtwork
 
-# Creating plainDE directory
+# Creating plainDE directory & copying base
 mkdir /usr/share/plainDE
 cp -R plainBase/usr/* /usr/
+
+# Copying artwork
+cp -R plainArtwork/flags /usr/share/
 
 # Compiling plainPanel
 cd plainPanel
