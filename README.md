@@ -1,4 +1,4 @@
 # plainInstaller
 
-See [Installation](https://docs.plainde.org/installation.html) wiki page to find out how to install plainDE.
+See [Installation](https://docs.plainde.org/installation.html) wiki page to know how to install plainDE.
 
