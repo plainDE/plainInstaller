@@ -1,4 +1,4 @@
-RELEASEVER="0.2.1"
+RELEASEVER="0.3"
 echo "plainInstaller $RELEASEVER"
 echo "==> Installing plainDE into your system."
 echo "    Please ensure you are allowed to use sudo"
