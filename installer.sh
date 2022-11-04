@@ -1,4 +1,4 @@
-RELEASEVER="0.3"
+RELEASEVER="0.4"
 echo "plainInstaller $RELEASEVER"
 echo "==> Installing plainDE into your system."
 echo "    Please ensure you are allowed to use sudo"
@@ -26,6 +26,7 @@ git clone https://github.com/plainDE/plainArtwork
 # Creating plainDE directory and copying base files
 sudo mkdir /usr/share/plainDE
 sudo cp -R plainBase/usr/* /usr/
+sudo chmod 755 /usr/share/plainDE/tools/*
 
 # Copying artwork
 sudo cp -R plainArtwork/flags /usr/share/
