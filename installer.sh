@@ -1,4 +1,4 @@
-RELEASEVER="0.4.1"
+RELEASEVER="0.4.2"
 echo "plainInstaller $RELEASEVER"
 echo "==> Installing plainDE into your system."
 echo "    Please ensure you are allowed to use sudo"
@@ -30,6 +30,8 @@ sudo chmod 755 /usr/share/plainDE/tools/*
 
 # Copying artwork
 sudo cp -R plainArtwork/flags /usr/share/
+sudo mkdir /usr/share/plainDE/icons
+sudo cp -R plainArtwork/icons /usr/share/plainDE/
 
 # Compiling plainPanel
 cd plainPanel
