@@ -1,4 +1,4 @@
-RELEASEVER="0.4.1"
+RELEASEVER="0.4.2"
 echo "plainInstaller $RELEASEVER as Root"
 echo "==> Installing plainDE into your system."
 echo "::  Press enter to proceed or Ctrl-C to cancel."
@@ -34,6 +34,8 @@ chmod 755 /usr/share/plainDE/tools/*
 
 # Copying artwork
 cp -R plainArtwork/flags /usr/share/
+mkdir /usr/share/plainDE/icons
+cp -R plainArtwork/icons /usr/share/plainDE
 
 # Compiling plainPanel
 cd plainPanel
