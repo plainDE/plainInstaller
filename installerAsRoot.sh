@@ -1,4 +1,4 @@
-RELEASEVER="0.6.2"
+RELEASEVER="0.6.3"
 echo "plainInstaller $RELEASEVER as Root"
 echo "==> Installing plainDE into your system."
 echo "::  Press enter to proceed or Ctrl-C to cancel."
@@ -64,3 +64,5 @@ cd ..
 
 # Removing temprorary files
 rm -rf plainDE-tmp-src
+
+echo "Installation successful! Now type add 'plainPanel' in autostart of your window manager and start exploring new DE!"
