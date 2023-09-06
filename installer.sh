@@ -1,4 +1,4 @@
-RELEASEVER="0.6.2"
+RELEASEVER="0.6.3"
 echo "plainInstaller $RELEASEVER"
 echo "==> Installing plainDE into your system."
 echo "    Please ensure you are allowed to use sudo"
@@ -61,3 +61,5 @@ cd ..
 
 # Removing temprorary files
 rm -rf plainDE-tmp-src
+
+echo "Installation successful! Now type add 'plainPanel' in autostart of your window manager and start exploring new DE!"
