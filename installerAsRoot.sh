@@ -65,4 +65,4 @@ cd ..
 # Removing temprorary files
 rm -rf plainDE-tmp-src
 
-echo "Installation successful! Now type add 'plainPanel' in autostart of your window manager and start exploring new DE!"
+echo "Installation successful! Now add 'plainPanel' in autostart of your window manager and start exploring new DE!"
